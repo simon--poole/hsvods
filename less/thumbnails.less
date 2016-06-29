@@ -1,0 +1,22 @@
+@import (reference) "thumb-sprites.less";
+.self .thumbnail, .thumbnail {
+	background: url(%%thumbnails%%) no-repeat;
+	width: 100px;
+	height: 70px;
+	padding: 0;
+	.sprite-position(@hs)!important;
+	> img {
+		display: none;
+	}
+}
+.thing .thumbnail {
+	&[href*="ONOG"]{
+		.sprite-position(@onog)!important;
+	}
+	&[href*="dreamhack"]{
+		.sprite-position(@dh)!important;
+	}
+	&[href*="esl"]{
+		.sprite-position(@esl)!important;
+	}
+}

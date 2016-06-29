@@ -1,0 +1,61 @@
+@import (reference) "team-sprites.less";
+
+
+.wiki a[href^="#"]:after,
+.usertext-body a[href^="#"]:after {
+  content:"";
+  width: 48px;
+  height: 20px;
+  background: url(%%teams%%) no-repeat transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default!important;
+  .sprite-position(@default);
+  text-align: center;
+}
+.wiki .toc a[href^="#"]:after,
+a.voteWeight[href^="#"]:after {
+  display: none!important;
+}
+
+//More teams coming soon
+
+a[href="#arc"]:after {
+		.sprite-position(@arc)!important;
+}
+a[href="#fnc"]:after {
+		.sprite-position(@fnc)!important;
+}
+a[href="#g2"]:after {
+		.sprite-position(@g2)!important;
+}
+a[href="#gor"]:after {
+		.sprite-position(@gor)!important;
+}
+a[href="#navi"]:after {
+		.sprite-position(@navi)!important;
+}
+a[href="#ts"]:after {
+		.sprite-position(@ts)!important;
+}
+a[href="#tsm"]:after {
+		.sprite-position(@tsm)!important;
+}
+a[href="#tl"]:after {
+		.sprite-position(@tl)!important;
+}
+a[href="#col"]:after {
+		.sprite-position(@col)!important;
+}
+a[href="#c9"]:after {
+		.sprite-position(@c9)!important;
+}
+a[href="#cel"]:after {
+		.sprite-position(@cel)!important;
+}
+a[href="#sk"]:after {
+		.sprite-position(@sk)!important;
+}
+a[href="#dig"]:after {
+		.sprite-position(@dig)!important;
+}

@@ -1,0 +1,36 @@
+@c9: -0px -0px 48px 20px;
+@default: -0px -20px 48px 20px;
+@env: -0px -40px 48px 20px;
+@faze: -0px -60px 48px 20px;
+@gfe: -0px -80px 48px 20px;
+@lg: -0px -100px 48px 20px;
+@ngr: -0px -120px 48px 20px;
+@spy: -0px -140px 48px 20px;
+@tl: -0px -160px 48px 20px;
+
+.sprite-width(@sprite) {
+  width: extract(@sprite, 3);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 4);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 1);
+  @sprite-offset-y: extract(@sprite, 2);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite(@sprite, @display:block) {
+  .sprite-position(@sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: @display;
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+.icon {
+  background-image: url('../images/teams.PNG');
+}

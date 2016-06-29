@@ -1,0 +1,28 @@
+{
+  "name": "loleventvods",
+  "description": "A collection of CSS customizations for LoLeventVoDs' subreddit.",
+  "version": "3.0.4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simon--poole/loleventvods.git"
+  },
+  "bugs": {
+    "url": "https://github.com/simon--poole/loleventvods/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-clean": "*",
+    "gulp-cssbeautify": "*",
+    "gulp-cssmin": "*",
+    "gulp-gm": "*",
+    "gulp-if": "*",
+    "gulp-image-optimization": "*",
+    "gulp-less": "*",
+    "gulp-rename": "*",
+    "gulp-util": "*",
+    "sprity": "*",
+    "sprity-gm": "^1.0.2",
+    "sprity-less": "*"
+  }
+}
